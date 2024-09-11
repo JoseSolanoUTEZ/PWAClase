@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mis notas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">José Solano</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/pages/all-notes.html">Mis notas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/pages/recent.html">Más recientes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">PWA</a></li>
+                    <li><a class="dropdown-item" href="#">Desarrollo Móvil Integral</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Gestión de desarrollo</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Mi nota</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <button class="btn btn-sm btn-succes">
+                      <i class="fa-solid fa-camera"></i>
+                    </button>
+                  </div>
+                  <div class="col-6 text-end">
+                    <button class="btn btn-sm btn-success">
+                      Guardar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      <h3 class="text-primary">Mis notas</h3>
+      <div class="card mt-2">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <img class="img-fluid rounded" src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/12/cena-navidena.jpg" alt="">
+            </div>
+            <div class="col text-truncate">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro blanditiis quisquam ducimus esse ex magnam. Laborum labore reprehenderit commodi, quaerat esse accusantium consequuntur placeat possimus numquam assumenda est quae!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-2">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <img class="img-fluid rounded" src="" alt="">
+            </div>
+            <div class="col text-truncate">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum porro blanditiis quisquam ducimus esse ex magnam. Laborum labore reprehenderit commodi, quaerat esse accusantium consequuntur placeat possimus numquam assumenda est quae!
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <script>
+        if(navigator.serviceWorker){
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
